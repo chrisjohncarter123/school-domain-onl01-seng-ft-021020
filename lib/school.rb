@@ -1,7 +1,7 @@
 # code here!
 
 class School
-  attr_accessor :name, 
+  attr_accessor :name
   
   
   def initialize(name)
