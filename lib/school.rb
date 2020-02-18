@@ -22,6 +22,7 @@ class School
   end
   
   def sort
+    @roster.sort.to_h
     @roster = @roster.map do |key, value|
       puts key
       puts value
