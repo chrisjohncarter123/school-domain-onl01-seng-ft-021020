@@ -25,8 +25,6 @@ class School
     result = {}
     @roster = @roster.sort.to_h
     @roster.each do |key, value|
-
-      
       result[key] = value.sort
       
     end
