@@ -22,7 +22,7 @@ class School
   end
   
   def sort
-    @roster = @roster.map do |names|
+    @roster = @roster.map_with_key do |names, key|
       puts names
       names.sort
     end
