@@ -22,8 +22,8 @@ class School
   end
   
   def sort
-    @roster = @roster.map_with_key do |names, key|
-      puts names
+    @roster = @roster.map do |key, value|
+      puts key
       names.sort
     end
     
