@@ -22,13 +22,21 @@ class School
   end
   
   def sort
+    result = {}
     @roster = @roster.sort.to_h
-    @roster = @roster.map do |key, value|
+    @roster.each do |key, value|
+      if(result.key?(key) == false)
+        result[key] = []
+      end
+      
       puts key
       puts value
-      value.sort
+      
+      result[key] << value.sort
+      
     end
     
-    @roster
+    @roster = result
+    result
   end
 end
