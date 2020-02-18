@@ -25,6 +25,7 @@ class School
     @roster = @roster.map do |key, value|
       puts key
       puts value
+      value.sort
     end
     
     @roster
