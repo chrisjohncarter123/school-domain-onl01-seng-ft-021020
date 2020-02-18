@@ -23,9 +23,10 @@ class School
   
   def sort
     @roster = @roster.map do |names|
+      puts names
       names.sort
     end
-    puts @roster
+    
     @roster
   end
 end
