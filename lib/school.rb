@@ -32,7 +32,7 @@ class School
       puts key
       puts value
       
-      result[key] << value.sort
+      result[key] = value.sort
       
     end
     
