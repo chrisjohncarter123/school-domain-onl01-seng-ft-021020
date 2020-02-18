@@ -25,12 +25,7 @@ class School
     result = {}
     @roster = @roster.sort.to_h
     @roster.each do |key, value|
-      if(result.key?(key) == false)
-        result[key] = []
-      end
-      
-      puts key
-      puts value
+
       
       result[key] = value.sort
       
